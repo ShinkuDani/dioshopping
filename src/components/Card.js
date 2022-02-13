@@ -25,7 +25,7 @@ const Card = ({ product, children }) => {
                         {children}
                     </Typography>
                     <Typography variant='subtitle1'>
-                        R$ {product.price.toFixed(2)}
+                        Nouble Phantasm: {product.noble_phantsm}
                     </Typography>
                     </Grid>
                 
@@ -33,7 +33,7 @@ const Card = ({ product, children }) => {
                     variant="contained"
                     onClick={()=>dispatch(cartActions.Add(cart, product))}
                 >
-                    Adicionar
+                    Detalhes
                 </Button>
                 </Grid>
             </Paper>
@@ -42,3 +42,4 @@ const Card = ({ product, children }) => {
 }
 
 export default Card;
+ 
