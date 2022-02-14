@@ -1,14 +1,19 @@
-
-import {Typography} from '@material-ui/core/';
-import Card from '../components/Card';
-import Item from '../components/Item';
-
-
-
-const Detalhes = ({product,children}) => {
+import React from 'react';
+import Profille from '../components/Profille'
+import { useSelector } from 'react-redux';
  
+
+
+const Detalhes = () => {
+    const servant = useSelector( state => state.products)
+    const artoria = servant[0];
+
     return(
-        <Typography ariant="h1" component="div"> {product.name}</Typography>
+        <div>
+            <Profille key={artoria.id_product}
+                    servant={artoria}
+                    ></Profille>
+        </div>
         
         
     )

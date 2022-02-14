@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Paper, Grid, Typography, List, makeStyles, } from '@material-ui/core/';
-import { palette } from '@material-ui/system';
 import Item from '../components/Item';
 import Card from '../components/Card';
 
@@ -9,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       marginTop: '5px',
-      bgcolor: 'primary.main'
     },
     paper: {
       padding: theme.spacing(2),
